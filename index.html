@@ -61,10 +61,13 @@
     <nav id="navbar" class="navbar">
         <div class="nav-container">
             <div class="nav-left">
-                <a href="#home" class="logo">Hossam Hassan</a>
+                <a href="#home" class="logo">
+                    <img src="assets/images/logo.svg" alt="Hossam Hassan">
+                </a>
             </div>
-            <div class="nav-center">
-                <div class="nav-menu" id="nav-menu">
+            
+            <div class="nav-center" id="nav-center">
+                <div class="nav-menu">
                     <a href="#home" class="nav-link active">Home</a>
                     <a href="#about" class="nav-link">About</a>
                     <a href="#cv" class="nav-link">CV</a>
@@ -73,6 +76,7 @@
                     <a href="#contact" class="nav-link">Contact</a>
                 </div>
             </div>
+            
             <div class="nav-controls">
                 <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
                     <div class="theme-toggle-track">
@@ -126,7 +130,7 @@
                 <p>Get to know more about my background, skills, and experience</p>
             </div>
             <div class="about-grid">
-                <div class="about-content fade-in">
+                <div class="about-content fade-in t">
                     <h3>Hi There! I'm Hossam Hassan</h3>
                     <p>Full Stack Developer with solid skills in Python (Django/Flask) and Laravel. I've developed multiple personal projects and web applications using modern frontend and backend tools. I'm a fast learner, detail-oriented, and passionate about building real-world solutions.</p>
                     <div class="about-info">
@@ -148,42 +152,306 @@
                         </div>
                     </div>
                 </div>
-                <div class="skills-container fade-in">
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <div class="skill-header">
-                                <span class="skill-name">HTML</span>
-                                <span class="skill-percentage">85%</span>
+                
+                <!-- Enhanced Skills Section -->
+                <!-- Enhanced Skills Section with Tabs -->
+                <div class="skills-section fade-in">
+                    <div class="skills-header">
+                        <h3>Technical Skills</h3>
+                        <p>My expertise across different technologies</p>
+                    </div>
+                    
+                    <!-- Skills Tabs Navigation -->
+                    <div class="skills-tabs-nav">
+                        <button class="skill-tab-btn active" data-tab="frontend">
+                            <div class="tab-icon">
+                                <i class="fas fa-palette"></i>
                             </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
+                            <span>Frontend</span>
+                        </button>
+                        <button class="skill-tab-btn" data-tab="backend">
+                            <div class="tab-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <span>Backend</span>
+                        </button>
+                        <button class="skill-tab-btn" data-tab="tools">
+                            <div class="tab-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <span>Tools</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Skills Content -->
+                    <div class="skills-content">
+                        <!-- Frontend Skills Tab -->
+                        <div class="skill-tab-content active" id="frontend">
+                            <div class="skills-grid">
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <div class="skill-icon">
+                                            <i class="fab fa-react"></i>
+                                        </div>
+                                        <div class="skill-info">
+                                            <span class="skill-name">React</span>
+                                            <span class="skill-percentage">85%</span>
+                                        </div>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="85"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <div class="skill-icon">
+                                            <i class="fab fa-js-square"></i>
+                                        </div>
+                                        <div class="skill-info">
+                                            <span class="skill-name">ES6+</span>
+                                            <span class="skill-percentage">80%</span>
+                                        </div>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="80"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <div class="skill-icon">
+                                            <i class="fab fa-js-square"></i>
+                                        </div>
+                                        <div class="skill-info">
+                                            <span class="skill-name">TypeScript</span>
+                                            <span class="skill-percentage">70%</span>
+                                        </div>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="70"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <div class="skill-icon">
+                                            <i class="fas fa-wind"></i>
+                                        </div>
+                                        <div class="skill-info">
+                                            <span class="skill-name">Tailwind</span>
+                                            <span class="skill-percentage">80%</span>
+                                        </div>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="80"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <div class="skill-icon">
+                                            <i class="fab fa-bootstrap"></i>
+                                        </div>
+                                        <div class="skill-info">
+                                            <span class="skill-name">Bootstrap</span>
+                                            <span class="skill-percentage">90%</span>
+                                        </div>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="90"></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="skill-item">
-                            <div class="skill-header">
-                                <span class="skill-name">CSS</span>
-                                <span class="skill-percentage">75%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%"></div>
+                        
+                        <!-- Backend Skills Tab -->
+                        <div class="skill-tab-content" id="backend">
+                            <div class="skills-grid">
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <div class="skill-icon">
+                                            <i class="fab fa-python"></i>
+                                        </div>
+                                        <div class="skill-info">
+                                            <span class="skill-name">Python</span>
+                                            <span class="skill-percentage">90%</span>
+                                        </div>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="90"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <div class="skill-icon">
+                                            <i class="fab fa-php"></i>
+                                        </div>
+                                        <div class="skill-info">
+                                            <span class="skill-name">PHP</span>
+                                            <span class="skill-percentage">80%</span>
+                                        </div>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="80"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <div class="skill-icon">
+                                            <i class="fab fa-python"></i>
+                                        </div>
+                                        <div class="skill-info">
+                                            <span class="skill-name">Django</span>
+                                            <span class="skill-percentage">88%</span>
+                                        </div>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="88"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <div class="skill-icon">
+                                            <i class="fas fa-flask"></i>
+                                        </div>
+                                        <div class="skill-info">
+                                            <span class="skill-name">Flask</span>
+                                            <span class="skill-percentage">82%</span>
+                                        </div>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="82"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <div class="skill-icon">
+                                            <i class="fas fa-database"></i>
+                                        </div>
+                                        <div class="skill-info">
+                                            <span class="skill-name">PostgreSQL</span>
+                                            <span class="skill-percentage">85%</span>
+                                        </div>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="85"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <div class="skill-icon">
+                                            <i class="fas fa-database"></i>
+                                        </div>
+                                        <div class="skill-info">
+                                            <span class="skill-name">MySQL</span>
+                                            <span class="skill-percentage">80%</span>
+                                        </div>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="80"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <div class="skill-icon">
+                                            <i class="fab fa-laravel"></i>
+                                        </div>
+                                        <div class="skill-info">
+                                            <span class="skill-name">Laravel</span>
+                                            <span class="skill-percentage">80%</span>
+                                        </div>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="80"></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="skill-item">
-                            <div class="skill-header">
-                                <span class="skill-name">JavaScript</span>
-                                <span class="skill-percentage">70%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 70%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-header">
-                                <span class="skill-name">Django & React</span>
-                                <span class="skill-percentage">80%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%"></div>
+                        
+                        <!-- Tools & Technologies Tab -->
+                        <div class="skill-tab-content" id="tools">
+                            <div class="skills-grid">
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <div class="skill-icon">
+                                            <i class="fab fa-git-alt"></i>
+                                        </div>
+                                        <div class="skill-info">
+                                            <span class="skill-name">Git</span>
+                                            <span class="skill-percentage">90%</span>
+                                        </div>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="90"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <div class="skill-icon">
+                                            <i class="fab fa-figma"></i>
+                                        </div>
+                                        <div class="skill-info">
+                                            <span class="skill-name">Figma</span>
+                                            <span class="skill-percentage">70%</span>
+                                        </div>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="70"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <div class="skill-icon">
+                                            <i class="fab fa-docker"></i>
+                                        </div>
+                                        <div class="skill-info">
+                                            <span class="skill-name">Docker</span>
+                                            <span class="skill-percentage">75%</span>
+                                        </div>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="75"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <div class="skill-icon">
+                                            <i class="fas fa-server"></i>
+                                        </div>
+                                        <div class="skill-info">
+                                            <span class="skill-name">Apache</span>
+                                            <span class="skill-percentage">80%</span>
+                                        </div>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="80"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <div class="skill-icon">
+                                            <i class="fas fa-project-diagram"></i>
+                                        </div>
+                                        <div class="skill-info">
+                                            <span class="skill-name">Agile</span>
+                                            <span class="skill-percentage">85%</span>
+                                        </div>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="85"></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

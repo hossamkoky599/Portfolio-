@@ -1,1 +1,93 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200"><rect width="200" height="200" fill="url('#gradient')"></rect><defs><linearGradient id="gradient" gradientTransform="rotate(222 0.5 0.5)"><stop offset="0%" stop-color="#669494"></stop><stop offset="100%" stop-color="#3694d7"></stop></linearGradient></defs><g><g fill="#8c8438" transform="matrix(5.937349397590362,0,0,5.937349397590362,16.636644130442505,142.21392987607473)" stroke="#2eca2a" stroke-width="0.55"><path d="M12.96-14.22L12.96 0L9.55 0L9.55-5.94L4.50-5.94L4.50 0L1.07 0L1.07-14.22L4.50-14.22L4.50-8.57L9.55-8.57L9.55-14.22L12.96-14.22ZM27.01-14.22L27.01 0L23.60 0L23.60-5.94L18.55-5.94L18.55 0L15.13 0L15.13-14.22L18.55-14.22L18.55-8.57L23.60-8.57L23.60-14.22L27.01-14.22Z"></path></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60">
+  <defs>
+    <!-- Gradient definitions -->
+    <linearGradient id="primaryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Glow effect -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Drop shadow -->
+    <filter id="dropshadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background circle for the icon -->
+  <circle cx="30" cy="30" r="25" fill="url(#primaryGradient)" opacity="0.1"/>
+  
+  <!-- Main logo icon - geometric H design -->
+  <g transform="translate(30, 30)" filter="url(#dropshadow)">
+    <!-- Left H bar -->
+    <rect x="-15" y="-12" width="4" height="24" fill="url(#primaryGradient)" rx="2"/>
+    
+    <!-- Right H bar -->
+    <rect x="11" y="-12" width="4" height="24" fill="url(#primaryGradient)" rx="2"/>
+    
+    <!-- Middle H bar with modern twist -->
+    <rect x="-11" y="-2" width="22" height="4" fill="url(#primaryGradient)" rx="2"/>
+    
+    <!-- Modern accent elements -->
+    <circle cx="-8" cy="-8" r="2" fill="#06b6d4" opacity="0.8"/>
+    <circle cx="8" cy="8" r="2" fill="#8b5cf6" opacity="0.8"/>
+  </g>
+  
+  <!-- Company name text -->
+  <text x="70" y="25" 
+        font-family="Inter, system-ui, -apple-system, sans-serif" 
+        font-size="16" 
+        font-weight="700" 
+        fill="url(#primaryGradient)"
+        filter="url(#glow)">
+    HOSSAM
+  </text>
+  
+  <!-- Subtitle text -->
+  <text x="70" y="42" 
+        font-family="Inter, system-ui, -apple-system, sans-serif" 
+        font-size="12" 
+        font-weight="500" 
+        fill="#64748b"
+        opacity="0.8">
+    HASSAN
+  </text>
+  
+  <!-- Decorative line -->
+  <line x1="70" y1="47" x2="140" y2="47" 
+        stroke="url(#primaryGradient)" 
+        stroke-width="2" 
+        opacity="0.6"
+        stroke-linecap="round"/>
+  
+  <!-- Tech accent -->
+  <text x="145" y="42" 
+        font-family="Inter, system-ui, -apple-system, sans-serif" 
+        font-size="9" 
+        font-weight="600" 
+        fill="#06b6d4"
+        opacity="0.7">
+    FULL STACK DEV
+  </text>
+  
+  <!-- Animated elements for modern feel -->
+  <g opacity="0.6">
+    <circle cx="200" cy="20" r="1.5" fill="#6366f1">
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="210" cy="25" r="1" fill="#8b5cf6">
+      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="220" cy="30" r="1.2" fill="#06b6d4">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
